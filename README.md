@@ -11,6 +11,8 @@ Steve, a finance graduate, approached the data analytics team to discuss the bes
 During the analysis Steve informed the data analytics team that the most important metrics to analyze for stock performance include the total daily volume and yearly return. The total daily volume is comprised of the total number of shares one stock is traded throughout a single day. The yearly return for each stock is the percent difference in price between the daily starting price and the daily ending price over a fiscal year. Those stocks with a high total daily volume and positive return rate are more appealing than those who may have negative returns and low trade volume.
 
 ## Results
+
+### Code
 The following link is the analysis document, with code, created by the data analytics team that demonstrates the metrics in action: [VBA Challenge](VBA_Challenge.xlsm). To analyze this vast amount of data the team created Visual Basic Application (VBA) code that would make this project more efficient and timelier for the client. The most impactful lines of code for this analysis include:
 1.	A timer that tracked how long it took to run the analysis based on the year provided by the user in the input box:
     - *yearValue = InputBox("What year would you like to run the analysis on?")*
@@ -67,5 +69,23 @@ Based on the analysis above, the data analytics team and Steve have determined t
 ## Summary
 
 ### Advantages & Disadvantages of Refactoring Code
+It is important to understand that refactoring code does not mean we are changing the fundamental design of the code or the output. Instead, it is making the design of said code more efficient and easier to understand for the user by restructuring the existing code. It is simplest to view this process at a high-level when determining the advantages of refactoring code:
+1.	It can improve the run time of VBA code making the overall process more efficient
+2.	It can improve the overall design and flow of VBA code
+3.	It can be easier to identify bugs, errors, or useful patterns
+
+Below are the disadvantages of refactoring code:
+1.	It may take more time to refactor code causing production to slow in the short-term
+2.	It costs money (hourly wage or salary of data analyst to refactor code)
+3.	It may be safer for the original code to not changed
+
+For more information regarding refactoring code, it is recommended for all interested persons to read articles on Quora such as: https://www.quora.com/What-are-the-pros-and-cons-of-refactoring. Quora is a website that provides actual information and testimonials by real individuals in the data field. 
 
 ### Application of Refactoring Original Code
+
+During this project, the data analytics team identified that both the original code and refactored code has its own unique advantages and disadvantages. Detailed in this section are the testimonials of those data analytics personnel. Regarding the original code, the team found that the code was more simplistic in its structure while providing accurate outputs. However, the run time of the original code was inefficient, and this sparked the idea for the team to refactor the code to run faster. The refactored code is lengthier than the original code as we initialized more variables that would improve the speed of the for loop and nested for loop. However, it took twice as long to write the refactored code than it did the original code. Overall, the team has preference over the refactored code as it proves more efficient for the team’s project load and can serve as a pattern to improve the efficiency of future projects code. Below are screens shots to demonstrate the change in the run time between the original code and the refactored code:
+
+![Screenshot](2017_Original_RunTime.png)
+![Screenshot](2017_Refactored_Code_RunTime.png)
+![Screenshot](2018_Original_Code_RunTime.png)
+![Screenshot](2017_Refactored_Code_RunTime.png)
